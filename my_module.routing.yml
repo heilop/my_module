@@ -1,0 +1,16 @@
+my_module.configure:
+  path: '/admin/my-module/settings'
+  defaults:
+    _title: 'Add settings'
+    _form: '\Drupal\my_module\Form\ConfigFormMyModule'
+  requirements:
+    _permission: 'access simple page'
+
+my_module.view:
+  path: '/my-module-page/{page_id}'
+  defaults:
+    _title: 'My Module page'
+    _controller: '\Drupal\my_module\Controller\MyModuleController::content'
+  requirements:
+    _permission: 'view content'
+    page_id: \d+

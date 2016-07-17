@@ -1,0 +1,19 @@
+<?php
+
+/**
+* @file.
+*/
+
+/**
+* Implements hook_theme().
+*/
+function my_module_theme() {
+  return array(
+    'my_module_theme' => array( // Theme name
+      'variables' => array( // Array of name for varialbles
+        'data' => array(),
+      ),
+      'templates' => 'templates/my-module-theme', // Path to the template without .html.twig in which the same variables will be available as specified above
+    ),
+  );
+}

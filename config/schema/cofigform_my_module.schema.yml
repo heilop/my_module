@@ -1,0 +1,7 @@
+configform_my_module.settings:
+  type: config_object
+  label: 'Configform My Module settings'
+  mapping:
+    email_address:
+      type: string
+      label: 'This is the example email for my module.'

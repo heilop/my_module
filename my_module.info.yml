@@ -1,0 +1,8 @@
+name: My module
+type: module
+description: My demo module for Drupal 8.
+core: 8.x
+package: Heilop
+version: 1.0
+
+configure: my_module.configure
